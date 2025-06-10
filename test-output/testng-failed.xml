@@ -14,7 +14,7 @@
     </classes>
   </test> <!-- Chrome(failed) -->
   <test thread-count="2" parallel="methods" name="Edge(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="ie"/>
     <classes>
       <class name="test.java.tests.StockInfoTest">
         <methods>

@@ -29,12 +29,12 @@ public class StockInfoTest extends BaseTest{
 	
 		
 		searchpage.getStockValues(stockName);
-		System.out.println("52 Week Hi " + searchpage.fiftyTwoWeekHigh);
-		System.out.println("52 Week Low " + searchpage.fiftyTwoWeekLow);
+		System.out.println("52 Week Hi " + SearchPage.fiftyTwoWeekHigh);
+		System.out.println("52 Week Low " + SearchPage.fiftyTwoWeekLow);
 		
 		takeScreenshot("Stock Information Page");
-		Assert.assertEquals(searchpage.fiftyTwoWeekHigh, high, "Mismatch in 52 Week High");
-		Assert.assertEquals(searchpage.fiftyTwoWeekLow, low, "Mismatch in 52 Week Low");
+		Assert.assertEquals(SearchPage.fiftyTwoWeekHigh, high, "Mismatch in 52 Week High");
+		Assert.assertEquals(SearchPage.fiftyTwoWeekLow, low, "Mismatch in 52 Week Low");
 		
 	}
 	

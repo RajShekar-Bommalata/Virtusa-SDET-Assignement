@@ -9,4 +9,7 @@ Steps to execute this project
 
 4. The tests will execute in parallel on chrome and firefox browsers
 
+5. Pushed code to GIT https://github.com/RajShekar-Bommalata/Virtusa-SDET-Assignement
+
 5. Unable to complete logging and extent reports due to multiple crashes of eclipse. Need more time
+
