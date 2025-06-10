@@ -9,7 +9,7 @@
 	</test>
 
 	<test name="Edge">
-		<parameter name="browser" value="ie"></parameter>
+		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="test.java.tests.StockInfoTest"></class>
 		</classes>

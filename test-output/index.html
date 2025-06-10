@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  2 skipped,  1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,26 +107,12 @@
                         <a href="#" panel-name="suite-VerifyStockInformationSuite" title="test.java.tests.StockInfoTest" class="method navigator-link" hash-for-method="searchStock(RCOM, 2.50, 1.34)">searchStock(RCOM, 2.50, 1.34)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-VerifyStockInformationSuite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-VerifyStockInformationSuite" class="hide-methods skipped suite-VerifyStockInformationSuite"> (hide)</a> <!-- hide-methods skipped suite-VerifyStockInformationSuite -->
-                      <a href="#" panel-name="suite-VerifyStockInformationSuite" class="show-methods skipped suite-VerifyStockInformationSuite"> (show)</a> <!-- show-methods skipped suite-VerifyStockInformationSuite -->
-                    </span>
-                    <div class="method-list-content skipped suite-VerifyStockInformationSuite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-VerifyStockInformationSuite" title="test.java.tests.StockInfoTest" class="method navigator-link" hash-for-method="searchStock(RCOM, 2.50, 1.34)">searchStock(RCOM, 2.50, 1.34)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-VerifyStockInformationSuite" title="test.java.tests.StockInfoTest" class="method navigator-link" hash-for-method="searchStock(RCOM, 2.58, 1.34)">searchStock(RCOM, 2.58, 1.34)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-VerifyStockInformationSuite -->
+                    </div> <!-- method-list-content failed suite-VerifyStockInformationSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -135,6 +121,11 @@
                       <a href="#" panel-name="suite-VerifyStockInformationSuite" class="show-methods passed suite-VerifyStockInformationSuite"> (show)</a> <!-- show-methods passed suite-VerifyStockInformationSuite -->
                     </span>
                     <div class="method-list-content passed suite-VerifyStockInformationSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-VerifyStockInformationSuite" title="test.java.tests.StockInfoTest" class="method navigator-link" hash-for-method="searchStock(RCOM, 2.58, 1.34)">searchStock(RCOM, 2.58, 1.34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-VerifyStockInformationSuite" title="test.java.tests.StockInfoTest" class="method navigator-link" hash-for-method="searchStock(RCOM, 2.58, 1.34)">searchStock(RCOM, 2.58, 1.34)</a> <!-- method navigator-link -->
@@ -173,48 +164,37 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VerifyStockInformationSuite-class-failed -->
-          <div class="suite-VerifyStockInformationSuite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">test.java.tests.StockInfoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="searchStock(RCOM, 2.50, 1.34)">
                   </a> <!-- searchStock(RCOM, 2.50, 1.34) -->
                   <span class="method-name">searchStock</span>
                   <span class="parameters">(RCOM, 2.50, 1.34)</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Browser not supported
-	at main.java.utils.BrowserSelection.getDriver(BrowserSelection.java:20)
-	at test.java.base.BaseTest.setup(BaseTest.java:30)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchStock(RCOM, 2.58, 1.34)">
-                  </a> <!-- searchStock(RCOM, 2.58, 1.34) -->
-                  <span class="method-name">searchStock</span>
-                  <span class="parameters">(RCOM, 2.58, 1.34)</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Browser not supported
-	at main.java.utils.BrowserSelection.getDriver(BrowserSelection.java:20)
-	at test.java.base.BaseTest.setup(BaseTest.java:30)
-... Removed 22 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: Mismatch in 52 Week High expected [2.50] but found [2.58]
+	at test.java.tests.StockInfoTest.searchStock(StockInfoTest.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 15 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VerifyStockInformationSuite-class-skipped -->
+          </div> <!-- suite-VerifyStockInformationSuite-class-failed -->
           <div class="suite-VerifyStockInformationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">test.java.tests.StockInfoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchStock(RCOM, 2.58, 1.34)">
+                  </a> <!-- searchStock(RCOM, 2.58, 1.34) -->
+                  <span class="method-name">searchStock</span>
+                  <span class="parameters">(RCOM, 2.58, 1.34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="searchStock(RCOM, 2.58, 1.34)">
@@ -242,7 +222,7 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrome --&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Edge&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.java.tests.StockInfoTest&quot;/&gt;
     &lt;/classes&gt;
@@ -291,24 +271,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchStock')
 data.setCell(0, 2, 'test.java.tests.StockInfoTest')
-data.setCell(0, 3, 11225);
+data.setCell(0, 3, 10288);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchStock')
 data.setCell(1, 2, 'test.java.tests.StockInfoTest')
-data.setCell(1, 3, 9358);
+data.setCell(1, 3, 10218);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'searchStock')
 data.setCell(2, 2, 'test.java.tests.StockInfoTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 9080);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'searchStock')
 data.setCell(3, 2, 'test.java.tests.StockInfoTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 8732);
 window.suiteTableData['VerifyStockInformationSuite']= { tableData: data, tableDiv: 'times-div-VerifyStockInformationSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-VerifyStockInformationSuite">
               </div> <!-- times-div-VerifyStockInformationSuite -->
             </div> <!-- times-div -->
@@ -341,35 +321,35 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">searchStock(RCOM, 2.58, 1.34)</span>
-                <span class="method-start">4096 ms</span>
+                <span class="method-start">2325 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchStock(RCOM, 2.50, 1.34)</span>
-                <span class="method-start">13457 ms</span>
+                <span class="method-start">12618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">24687 ms</span>
+                <span class="method-start">21704 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup(ie)</span>
-                <span class="method-start">25006 ms</span>
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">21989 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">searchStock(RCOM, 2.58, 1.34)</span>
-                <span class="method-start">25016 ms</span>
+                <span class="method-start">37664 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">searchStock(RCOM, 2.50, 1.34)</span>
-                <span class="method-start">25022 ms</span>
+                <span class="method-start">47883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">25032 ms</span>
+                <span class="method-start">56618 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

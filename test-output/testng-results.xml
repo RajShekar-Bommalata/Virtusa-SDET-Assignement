@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="1" skipped="2">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T14:19:28 IST" name="VerifyStockInformationSuite" finished-at="2025-06-10T14:19:53 IST" duration-ms="25043">
+  <suite started-at="2025-06-10T14:25:16 IST" name="VerifyStockInformationSuite" finished-at="2025-06-10T14:26:14 IST" duration-ms="57970">
     <groups>
     </groups>
-    <test started-at="2025-06-10T14:19:28 IST" name="Chrome" finished-at="2025-06-10T14:19:53 IST" duration-ms="24983">
+    <test started-at="2025-06-10T14:25:16 IST" name="Chrome" finished-at="2025-06-10T14:25:38 IST" duration-ms="21968">
       <class name="test.java.tests.StockInfoTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:19:28 IST" name="setup" finished-at="2025-06-10T14:19:32 IST" duration-ms="4073" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:25:16 IST" name="setup" finished-at="2025-06-10T14:25:18 IST" duration-ms="2299" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:19:32 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:19:41 IST" duration-ms="9358" status="PASS">
+        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:25:18 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:25:28 IST" duration-ms="10288" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchStock -->
-        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:19:41 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:19:52 IST" duration-ms="11225" status="FAIL">
+        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:25:29 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:25:38 IST" duration-ms="9080" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -88,59 +88,26 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchStock -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:19:52 IST" name="teardown" finished-at="2025-06-10T14:19:53 IST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.java.tests.StockInfoTest@3e694b3f]" started-at="2025-06-10T14:25:38 IST" name="teardown" finished-at="2025-06-10T14:25:38 IST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- test.java.tests.StockInfoTest -->
     </test> <!-- Chrome -->
-    <test started-at="2025-06-10T14:19:53 IST" name="Edge" finished-at="2025-06-10T14:19:53 IST" duration-ms="34">
+    <test started-at="2025-06-10T14:25:38 IST" name="Edge" finished-at="2025-06-10T14:26:14 IST" duration-ms="35976">
       <class name="test.java.tests.StockInfoTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:19:53 IST" name="setup" finished-at="2025-06-10T14:19:53 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:25:38 IST" name="setup" finished-at="2025-06-10T14:25:54 IST" duration-ms="15673" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ie]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Browser not supported]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Browser not supported
-at main.java.utils.BrowserSelection.getDriver(BrowserSelection.java:20)
-at test.java.base.BaseTest.setup(BaseTest.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:19:53 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:19:53 IST" duration-ms="0" status="SKIP">
+        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:25:54 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:26:04 IST" duration-ms="10218" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,43 +125,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Browser not supported]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Browser not supported
-at main.java.utils.BrowserSelection.getDriver(BrowserSelection.java:20)
-at test.java.base.BaseTest.setup(BaseTest.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchStock -->
-        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:19:53 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:19:53 IST" duration-ms="0" status="SKIP">
+        <test-method signature="searchStock(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:26:04 IST" name="searchStock" data-provider="stockData" finished-at="2025-06-10T14:26:12 IST" duration-ms="8732" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -212,43 +146,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Browser not supported]]>
+              <![CDATA[Mismatch in 52 Week High expected [2.50] but found [2.58]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Browser not supported
-at main.java.utils.BrowserSelection.getDriver(BrowserSelection.java:20)
-at test.java.base.BaseTest.setup(BaseTest.java:30)
+              <![CDATA[java.lang.AssertionError: Mismatch in 52 Week High expected [2.50] but found [2.58]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at test.java.tests.StockInfoTest.searchStock(StockInfoTest.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchStock -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:19:53 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1749545393200" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.java.tests.StockInfoTest@385c9627]" started-at="2025-06-10T14:26:13 IST" name="teardown" finished-at="2025-06-10T14:26:14 IST" duration-ms="1344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -14,13 +14,13 @@
     </classes>
   </test> <!-- Chrome(failed) -->
   <test thread-count="2" parallel="methods" name="Edge(failed)">
-    <parameter name="browser" value="ie"/>
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="test.java.tests.StockInfoTest">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="searchStock"/>
+          <include name="searchStock" invocation-numbers="1"/>
         </methods>
       </class> <!-- test.java.tests.StockInfoTest -->
     </classes>
